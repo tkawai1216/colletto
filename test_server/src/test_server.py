@@ -1,7 +1,9 @@
 from flask import *
+from models import db
 
 app = Flask(__name__)
 
+'''
 tasks = [
 	{
 		'id': 1,
@@ -27,6 +29,7 @@ def get_task(task_id):
 	if len(task) == 0:
 		abort(404)
 	return jsonify({'task': task[0]})
+'''
 
 if __name__ == '__main__':
 	app.run(debug=True)
